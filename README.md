@@ -1,6 +1,6 @@
 # Route Planning Project
 
-This repo contains the starter code for the Route Planning project.
+This repo contains the code for the Route Planning project.
 
 <img src="map.png" width="600" height="450" />
 
@@ -8,11 +8,11 @@ This repo contains the starter code for the Route Planning project.
 
 When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
 ```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/vshalbansal/CppND-Route-Planning-Project.git --recurse-submodules
 ```
 or with SSH:
 ```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone git@github.com:vshalbansal/CppND-Route-Planning-Project.git --recurse-submodules
 ```
 
 ## Dependencies for Running Locally
@@ -61,7 +61,7 @@ The testing executable is also placed in the `build` directory. From within `bui
 ```
 
 ## Troubleshooting
-* Some students have reported issues in cmake to find io2d packages, make sure you have downloaded [this](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md#xcode-and-libc).
+* In case of issues in cmake to find io2d packages, make sure you have downloaded [this](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md#xcode-and-libc).
 * For MAC Users cmake issues: Comment these lines from CMakeLists.txt under P0267_RefImpl
     ```
     if( NOT DEFINED IO2D_WITHOUT_SAMPLES )
@@ -101,5 +101,7 @@ The testing executable is also placed in the `build` directory. From within `bui
      
 
 * If you are facing errors with --config try to remove -- from the command.
+
+* There might be an issue with gtest library where in gtest-death-test.cc file a dummy variable is decalred but not initialized, you may find the fix for the same at https://github.com/google/googletest/pull/3024.
 
 
